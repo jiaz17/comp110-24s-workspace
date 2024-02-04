@@ -28,6 +28,25 @@ else:
     print("Incorrect! You missed the ship.")
     result = WHITE_BOX
 
-full_emoji_string = BLUE_BOX * 4
-full_emoji_string = full_emoji_string[:guess - 1] + result + full_emoji_string[guess:]
+full_emoji_string = ""
+if guess == 1:
+    if boat_location == 1:
+        full_emoji_string = RED_BOX + BLUE_BOX + BLUE_BOX + BLUE_BOX
+    else:
+        full_emoji_string = WHITE_BOX + BLUE_BOX + BLUE_BOX + BLUE_BOX
+elif guess == 2:
+    if boat_location == 2:
+        full_emoji_string = BLUE_BOX + RED_BOX + BLUE_BOX + BLUE_BOX
+    else:
+        full_emoji_string = BLUE_BOX + WHITE_BOX + BLUE_BOX + BLUE_BOX
+elif guess == 3:
+    if boat_location == 3:
+        full_emoji_string = BLUE_BOX + BLUE_BOX + RED_BOX + BLUE_BOX
+    else:
+        full_emoji_string = BLUE_BOX + BLUE_BOX + WHITE_BOX + BLUE_BOX
+elif guess == 4:
+    if boat_location == 4:
+        full_emoji_string = BLUE_BOX + BLUE_BOX + BLUE_BOX + RED_BOX
+    else:
+        full_emoji_string = BLUE_BOX + BLUE_BOX + BLUE_BOX + WHITE_BOX
 print(full_emoji_string)
