@@ -1,5 +1,5 @@
-"""TODO: Describe your scene program."""
-__author__ = "Your PID"
+"""Houses with Windows. """
+__author__ = "730679888"
 	 
 from turtle import Turtle, colormode, done 
 
