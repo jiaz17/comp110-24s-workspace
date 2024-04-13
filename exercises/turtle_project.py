@@ -63,9 +63,9 @@ def main() -> None:
     draw_vertical_rectangle(house_turtle, -150, -150, 200, 150, "grey")
     draw_triangle(house_turtle, -150, 0, 200, "red")
     draw_vertical_rectangle(house_turtle, -100, -150, 40, 60, "brown")
-    windows_start_y = -90  # Top-left corner of the house, adjust as necessary
-    windows_spacing = 30 + 10  # Width of a window plus space between windows
-    draw_windows(house_turtle, -140, windows_start_y, 30, 30, 5)  # Draw 5 windows
+    windows_start_y = -90 
+    windows_spacing = 30 + 10  
+    draw_windows(house_turtle, -140, windows_start_y, 30, 30, 5)  
 
     done()
 
