@@ -1,7 +1,10 @@
-"""File to define Fish class"""
+"""File to define Fish class."""
+
 
 class Fish:
+    """Fish Class establish."""
     def __init__(self):
+        """Initialize Fish instance."""
         self.age = 0
         return None
     
